@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>HYUI网站</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  }
+body{
+  background:rgba(12,15,28,6);
+  }
+h1{text-align:center;
+  color:yellow;
+  }
+ p{text-align:center;
+   margin:35px;
+   color:yellow;
+   }
+ img{
+   width:100%;
+   }
+ #div{
+   display:block;
+   margin:0 auto;
+   width:100px;
+   margin-top:2px;
+   background:rgba(126,125,128,0.6);
+   }
+ button{
+   color:yellow;
+   }
+</style>
+  </head>
+  <body>	
+  
+  <img src="27.jpg"/>
+	<h1 >你好</h1>
+	<p >欢迎来到，HYUI历史圈网站</p> 
+
+ <button onclick="a()" id="div">点击进入</button><br/>
+ <button onclick="b()" id="div">测试员入口</button>
+ <script>
+ function a(){
+ window.location.href="1.html";
+ }
+function b(){
+    let a = prompt("为了验证你是不是测试员\n请输入验证码:")
+    if(a=="HUYI万岁"){
+      window.location.href="3.html";
+      }else{
+      window.confirm("验证码错误。");
+      }
+    }
+</script>
+ <script src='https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js'></script>
+    <script>
+  
+ 
+   swal('公告','欢迎访问本网站','success');
+   
+  </script>
+  </body>
+</html>

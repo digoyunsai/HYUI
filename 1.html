@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>HYUI网站</title>
+ <style>
+ *{
+ margin:0;
+ padding:0;
+ }
+div{
+  display:block;
+  margin:0 auto;
+  width:75px;
+ margin-top:20px;
+  font-size:5vw;
+  background-color:yellow;
+  border-radius:10%;
+  }
+h1{
+  text-align:center;
+  font-size:5vw;
+  }
+video{
+  width:100%;
+  }
+div:hover{
+  background-color:red;
+  }
+p{
+  text-align:center;
+  margin-top:28px;
+  }
+ </style>
+  </head>
+  <body>	
+  
+      <video src="7.mp4"></video>
+      <h1>在进入之前，请先观看视频</h1>
+    	<div onclick="a()" >点击播放</div> 
+     <p>(提示:看完才能进入)</p>
+        
+ 
+<script>
+function a(){
+let d = document.querySelector("video")
+d.play()
+setTimeout(function (){
+  window.location.href="2.html";
+},53000);
+}
+ </script>
+  </body>
+</html>

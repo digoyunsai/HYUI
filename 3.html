@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>HUYI网站</title>
+ <style>
+*{
+  margin:0;
+  padding:0;
+  }
+body{
+  background:rgba(12,15,28,6);
+  }
+h1{text-align:center;
+  color:yellow;
+  margin-top:150px;
+  }
+ p{text-align:center;
+   margin:35px;
+   color:yellow;
+   }
+ img{
+   width:100%;
+   }
+ button{
+   display:block;
+   margin:0 auto;
+   width:100px;
+   margin-top:39px;
+   background:rgba(126,125,128,0.6);
+   color:yellow;
+   }
+ #mw{
+   position:absolute;
+   top:100px;
+   width:80px;
+   background:rgba(126,125,128,0.6);
+   color:yellow;
+   }
+ #mw:hover{
+   background-color:red;
+   }
+</style>
+  </head>
+  <body>	
+  <div class="hj">
+	<h1>你已通过验证</h1>
+<button onclick="a()">查看我们的群聊</button><button onclick="b()">HUYI队长</button>
+</div>
+<button onclick="v()" style="display:none;" id="a">返回</button>
+<img src="93.jpg" style="display:none;" id="b"/>
+<img src="44.jpg" style="display:none;" id="c"/>
+<script>
+
+function b(){
+    let as=document.querySelector(".hj")
+let a=document.querySelector("#a")
+let b=document.querySelector("#b")
+as.style.display="none"
+a.style.display="block"
+b.style.display="block"
+}
+function a(){
+    let as=document.querySelector(".hj")
+let a=document.querySelector("#a")
+let b=document.querySelector("#c")
+as.style.display="none"
+a.style.display="block"
+b.style.display="block"
+}
+function v(){
+window.location.href="3.html";
+}
+</script>
+  </body>
+</html>
